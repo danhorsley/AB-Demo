@@ -20,7 +20,7 @@
             This content will be replaced by ABalytics
         </div>
 
-        <form class="experiment1_button" bgcolor=#00FFFF">
+        <form class="experiment1_button">
             This will be replaced too, with a button for the form
         </form>
         
@@ -29,6 +29,13 @@
         </div>
 
         <form class="experiment2_button">
+            This will be replaced too, with a button for the form
+        </form>
+        <div class="experiment3_text">
+            This content will be replaced by ABalytics
+        </div>
+
+        <form class="experiment3_button">
             This will be replaced too, with a button for the form
         </form>
     </body>
@@ -61,6 +68,21 @@
                  name: 'variant4',
                  'experiment2_text': 'this is option the second...',
                  'experiment2_button':
+                       '<input type="button" value="what is that?" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'number 4\');">'
+             }
+
+         ],
+         experiment3: [
+             {
+                 name: 'variant5',
+                 'experiment3_text': 'option the third',
+                 'experiment3_button':
+                       '<input type="button" value="what is this?" onclick="ga(\'send\', \'event\', \'buttonclick\', \'nice\'); alert(\'number 3\');">'
+             },
+             {
+                 name: 'variant6',
+                 'experiment3_text': 'this is option the second...',
+                 'experiment3_button':
                        '<input type="button" value="what is that?" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'number 4\');">'
              }
 
