@@ -30,22 +30,17 @@
          experiment1: [
              {
                  name: 'variant1',
-                 'experiment1_text': 'Pretty please click the button with sugar on top!',
+                 'experiment1_text': 'option the first',
                  'experiment1_button':
-                       '<input type="button" value="Click me!" onclick="ga(\'send\', \'event\', \'buttonclick\', \'nice\'); alert(\'Thanks!\');">'
+                       '<input type="button" value="this should be clicked" onclick="ga(\'send\', \'event\', \'buttonclick\', \'nice\'); alert(\'took your time\');">'
              },
              {
                  name: 'variant2',
-                 'experiment1_text': 'You better click that button...',
+                 'experiment1_text': 'this is option the second...',
                  'experiment1_button':
-                       '<input type="button" value="Click me, OR ELSE" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You will be spared.\');">'
+                       '<input type="button" value="this should also be clicked" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'ugh\');">'
              }
-             {
-                  name: 'variant3',
-                 'experiment1_text': 'another option...',
-                 'experiment1_button':
-                       '<input type="button" value="please" onclick="ga(\'send\', \'event\', \'buttonclick\', \'stern\'); alert(\'You will be spared.\');">'
-             }
+
          ]
      });
      ga('send', 'pageview');
